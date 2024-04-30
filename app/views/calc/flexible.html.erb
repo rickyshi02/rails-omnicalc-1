@@ -1,0 +1,16 @@
+<h1>
+      <%=@form.last[0]%> Results
+    </h1>
+
+    <dl>
+      <% @form.each do |array|%>
+        <dt> <%= array[0]%>
+        </dt>
+        <dd> <%= array[1]%>
+        </dd>
+      <% end%>
+    </dl>
+
+    <a href="/square/new">
+      Calculate another square
+    </a>
